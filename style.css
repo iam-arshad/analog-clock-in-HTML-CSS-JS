@@ -1,0 +1,87 @@
+body{
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#clock{
+    background-color: white;
+    border:0.8rem solid black;
+    width: 20rem;
+    height: 20rem;
+
+    border-radius: 50%;
+    position: relative;
+}
+
+#clock .number{
+    /* border:3px solid orange; */
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+}
+
+ .number1{rotate: 30deg;}
+.number2{rotate: 60deg;}
+.number3{rotate: 90deg;}
+.number4{rotate: 120deg;}
+.number5{rotate: 150deg;}
+.number6{rotate: 180deg;}
+.number7{rotate: 210deg;}
+.number8{rotate: 240deg;}
+.number9{rotate: 270deg;}
+.number10{rotate: 300deg;}
+.number11{rotate: 330deg;}
+
+.hand
+{
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+
+    width: 20rem;
+    height: 20rem;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+}
+
+/* to create a centre dot in the clock */
+#clock::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+}
+
+.hour-hand
+{
+    width: .6rem;
+    height: 5rem;
+    background-color:teal;
+}
+
+.minute-hand{
+    width: 0.4rem;
+    height: 7.5rem;
+    background-color: teal;
+}
+
+.second-hand
+{
+    width: 0.3em;
+    height: 8rem;
+    background-color: red;
+}
